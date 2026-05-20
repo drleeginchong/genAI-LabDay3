@@ -1,0 +1,112 @@
+
+**Copy and paste this full prompt into your AI coding assistant.**
+
+You are acting as the AI driver in an AI pair programming lab.
+
+Generate exactly three files:
+
+1. ai_generated_code.py
+2. test_ai_generated_code.py
+3. AI_CODE_REVIEW_CHECKLIST.md
+
+Do not generate any extra files.
+Do not include explanations outside the three file sections.
+
+## Task Brief
+
+Task:
+[PASTE THE PYTHON DEVELOPMENT TASK HERE]
+
+Context:
+[PASTE THE TASK CONTEXT HERE]
+
+Constraints:
+[PASTE CONSTRAINTS HERE, SUCH AS PERFORMANCE, INPUT TYPES, OR STYLE REQUIREMENTS]
+
+## File 1: ai_generated_code.py
+
+Create Python code that solves the task.
+
+Requirements:
+- The code must be valid Python.
+- The code must run without syntax errors.
+- Use real, existing imports only.
+- Avoid unnecessary external libraries.
+- Do not modify global state unless the task requires it.
+- Do not read from or write to files unless the task requires it.
+- Follow PEP 8.
+- Use modern Python style where appropriate, such as f-strings or pathlib.
+- Avoid copy-paste logic.
+- Put reusable logic into functions.
+- Keep the code maintainable by a human in six months.
+
+## File 2: test_ai_generated_code.py
+
+Create Python tests for the code in ai_generated_code.py.
+
+Requirements:
+- Include tests that confirm the code satisfies the original task and context.
+- Include edge case tests where relevant:
+  - None
+  - NaN
+  - empty strings
+  - empty lists
+- Make the tests easy to run.
+- Make the tests easy to understand.
+- Do not rely on external services.
+- Mock dependencies if needed.
+
+## File 3: AI_CODE_REVIEW_CHECKLIST.md
+
+Create a reusable checklist for reviewing the generated Python code during the Validate phase.
+
+The checklist must include these sections:
+
+# AI Code Review Checklist
+
+## 1. Functional Integrity
+
+- [ ] The Python code runs in the IDE.
+- [ ] The code passes a syntax check.
+- [ ] There are no missing imports.
+- [ ] All imported libraries are real and available.
+- [ ] The logic satisfies the original task and context.
+- [ ] The code does not unexpectedly modify global state.
+- [ ] The code does not unexpectedly modify files.
+- [ ] The output matches the intended behavior.
+
+## 2. Performance and Quality
+
+- [ ] The code meets the required Big O constraint.
+- [ ] The code follows PEP 8.
+- [ ] The code uses clear Python style.
+- [ ] The code uses f-strings where appropriate.
+- [ ] The code uses pathlib where appropriate.
+- [ ] The code avoids unnecessary copy-paste logic.
+- [ ] Reusable logic is placed into functions.
+- [ ] The code is readable enough for a human to maintain in six months.
+
+## 3. Testability
+
+- [ ] The code handles None where relevant.
+- [ ] The code handles NaN where relevant.
+- [ ] The code handles empty strings where relevant.
+- [ ] The code handles empty lists where relevant.
+- [ ] The logic is decoupled enough to be unit-tested.
+- [ ] Dependencies can be mocked where needed.
+
+## 4. Security Risk Audit
+
+- [ ] The code was checked for high-risk security patterns.
+- [ ] SonarQube or Snyk was used where appropriate.
+- [ ] Security findings were reviewed before merge.
+
+## 5. Pair Programming Vibe Check
+
+- [ ] We understand why this code works.
+- [ ] We are not accepting it only because it appears to work.
+- [ ] The code is maintainable by a human in six months.
+
+Important:
+The checklist must be based only on the review criteria above.
+Do not add extra security categories or unsupported assumptions.
