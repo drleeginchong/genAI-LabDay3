@@ -98,7 +98,6 @@ The checklist must include these sections:
 ## 4. Security Risk Audit
 
 - [ ] The code was checked for high-risk security patterns.
-- [ ] SonarQube or Snyk was used where appropriate.
 - [ ] Security findings were reviewed before merge.
 
 ## 5. Pair Programming Vibe Check
